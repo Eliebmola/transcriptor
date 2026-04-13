@@ -1,0 +1,27 @@
+# --- Frontend (React + Vite + Firebase) ---
+# Ignora los módulos de node en cualquier nivel
+**/node_modules/
+# Ignora la carpeta de configuración/cache de Firebase
+.firebase/
+# Ignora las carpetas de compilación (donde se genera el sitio final)
+dist/
+build/
+
+# --- Backend & Python ---
+# Ignora el entorno virtual (Carpeta .venv en tu imagen)
+.venv/
+# Ignora archivos temporales de Python
+__pycache__/
+*.py[cod]
+*$py.class
+
+# --- Variables de Entorno y Seguridad ---
+# IMPORTANTE: No subas tus credenciales o llaves de Firebase/Base de datos
+.env
+.env.local
+.env.*.local
+
+# --- Otros ---
+.DS_Store
+.vscode/
+.idea/
